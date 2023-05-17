@@ -2,20 +2,20 @@
     <form>
         <div>
           <label for="id">ID:</label>
-          <input type="text" id="id" name="id" required>
+          <input type="text" [(ngModel)]="carrera.id" id="id" name="id" required>
         </div>
         <div>
           <label for="carrera">Carrera:</label>
-          <input type="text" id="carrera" name="carrera" required>
+          <input type="text"  [(ngModel)]="carrera.nombre" id="carrera" name="carrera" required>
         </div>
         <div>
           <label for="area">Área:</label>
-          <input type="text" id="area" name="area" required>
+          <input type="text" [(ngModel)]="carrera.area" id="area" name="area" required>
         </div>
         <div>
           <label for="modalidad">Modalidad:</label>
-          <input type="text" id="modalidad" name="modalidad" required>
+          <input type="text" [(ngModel)]="carrera.modalidad" id="modalidad" name="modalidad" required>
         </div>
-        <button type="submit">Guardar</button>
+        <button type="submit"  (click)="save()" >Guardar</button>
       </form>
 </div>

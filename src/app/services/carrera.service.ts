@@ -8,6 +8,13 @@ export class CarreraService {
 
   listcarreras : Carrera[] = [];
   
+  save(carrera: Carrera){
+    this.listcarreras.push(carrera)
+  }
+
+  getList(){
+    return this.listcarreras
+  }
 
 
   constructor() { }

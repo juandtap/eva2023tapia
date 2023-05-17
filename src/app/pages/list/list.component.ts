@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Carrera } from 'src/app/Domain/carrera';
+import { CarreraService } from 'src/app/services/carrera.service';
 
 @Component({
   selector: 'app-list',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
+  carreraList : Carrera[] = []
+
+  constructor(private carreraService: CarreraService){
+    this.carreraList = carreraService.getList()
+    console.log('lista de carreras '+this.carreraList)
+  }
+
 
 }

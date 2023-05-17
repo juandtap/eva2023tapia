@@ -1,1 +1,21 @@
-<p>list works!</p>
+<div class="list-container">
+    <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Carrera</th>
+            <th>Área</th>
+            <th>Modalidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of carreraList">
+            <td>{{ item.id }}</td>
+            <td>{{ item.nombre }}</td>
+            <td>{{ item.area }}</td>
+            <td>{{ item.modalidad }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>
