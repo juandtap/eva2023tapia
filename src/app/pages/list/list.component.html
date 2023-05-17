@@ -1,6 +1,7 @@
 <div class="list-container">
+    <span *ngIf="carreraList.length === 0">No existen carreras</span>
     <table>
-        <thead>
+        <thead  *ngIf="carreraList.length !== 0">
           <tr>
             <th>ID</th>
             <th>Carrera</th>

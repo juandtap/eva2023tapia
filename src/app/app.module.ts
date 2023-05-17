@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './template/header/header.component';
 import { MenuComponent } from './template/menu/menu.component';
-import { ContentComponent } from './template/content/content.component';
+
 import { ListComponent } from './pages/list/list.component';
 import { CreateComponent } from './pages/create/create.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -16,7 +16,7 @@ import { AboutComponent } from './pages/about/about.component';
     AppComponent,
     HeaderComponent,
     MenuComponent,
-    ContentComponent,
+    
     ListComponent,
     CreateComponent,
     AboutComponent
